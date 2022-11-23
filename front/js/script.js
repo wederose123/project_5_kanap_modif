@@ -13,6 +13,7 @@ async function getProducts() {
   let products = await getProducts();
   //console.log("produit", products);
   let htmlRender = " ";
+
   products.forEach((element) => {
     let htmlContent = ` 
         <a href="./product.html?id=${element._id}">
